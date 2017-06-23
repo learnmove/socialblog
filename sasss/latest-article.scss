@@ -8,6 +8,7 @@ body{
 
 .container{
 	margin-top: 50px;
+	padding: 0px;
 }
 .hotest-article-block{
 	display: flex;
@@ -20,7 +21,11 @@ body{
 	width:calc(100%/3 );
 	    // box-shadow: 1px 6px 27px #888888;
 		margin-right: 15px;
-
+		opacity: 0.7;
+		transition:opacity .5s;
+		&:hover{
+				opacity: 1;
+			}
 	.hot-user-info{
 		color:#fff;
 
@@ -29,12 +34,16 @@ body{
 		.hot-avatar{
 			@media screen and (min-width: 600px){
 			padding: 0 30px;
+
 				
 			}
 			width: 100%;
-			img{
+			img{	
 					width: 100%;
 					height: auto;
+
+					
+
 			}
 		}
 		.hot-user-account{
@@ -113,4 +122,66 @@ body{
 		}
 	}
 
+}
+.speak-item{
+	float:left;
+	margin-left: 50px;
+
+}
+.speak-items{
+	display: flex;
+}
+
+
+// 
+.alert-danger{
+	text-align: center;
+	background-color: #ff3636;
+	border:0px;
+	margin-bottom: 0px;
+padding: 0px;
+
+
+	color:#ffffff;
+}.alert-info{background-color: #034889;
+	color:#fff;
+	border:0px;
+	text-align: center;
+	margin-bottom: 0px;
+padding: 0px;
+
+
+}
+marquee{
+	color:white;
+	img{
+		width:50px;
+		height:50px;
+	}
+}
+.alert-warning{
+	text-align: center;
+	margin-bottom: 0px;
+padding: 0px;
+background-color:#FF7D9F;
+	border:0px;
+color:#fff;
+}
+
+.alert{
+	font-size:17px;
+	margin-bottom: 15px;
+
+}
+// modal
+	.post-button{
+		position: fixed;
+		bottom: 0px;
+		left:30%;
+		background-color: #a94442;
+		border:0px;
+
+	}
+.modal-content{
+    position: relative;
 }
