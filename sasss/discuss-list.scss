@@ -125,3 +125,9 @@ body{
 	    text-overflow: ellipsis;
 	overflow: hidden;
 }
+a{
+	color:#F0F0F0;
+	&:hover{
+		color:#616161;
+	}
+}

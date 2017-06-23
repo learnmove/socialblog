@@ -126,12 +126,12 @@
           </div>
         </div>
         <!-- content -->
-        <div class="self-container"> 
+        <div class="self-container "> 
             <div class="top"> 
              好友名單
             <span class="friend-count">(55)  </span>
             </div>
-            <div class="list">  
+            <div class="list ">  
             <table class="table table-hover">
             <thead>
               <tr>
@@ -140,109 +140,52 @@
 
               </tr>
             </thead>
-            <tbody> 
+            <tbody class=""> 
              <tr>
                <td class="friend-block">
-                 <div class="avatar"> 
+                 <a href="">
+                     <div class="avatar"> 
+
                  <img class="img-circle" src=" https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/14184568_1110549169035631_23306978654507606_n.jpg?oh=f132424f61fde3648aa47a287c52b2f4&oe=59E9F754">
                  </div>
-                 <span class="firend-name">  
-                 張均豪
-                 </span>
-               </td>
-               <td class="status"> 
-               
-                <div class="status-content">  
-                  你是一隻魚 何必學著飛翔
-                </div>
-              </td>
-             </tr>
-                          <tr>
-               <td class="friend-block">
-                 <div class="avatar"> 
-                 <img class="img-circle" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/5999_419906794757526_386435983_n.jpg?oh=08ad35578ef7f02f31d123cf50642c88&oe=59DAA20F">
+                 <div class="friend-name">  
+                 張均豪李孟軒軒
                  </div>
-                 <span class="firend-name">  
-                 趙沐宏
-                 </span>
+                   
+                 </a>
+               
                </td>
                <td class="status"> 
                
                 <div class="status-content">  
-曾經夢想 也曾經選擇遺忘
+                  你是一隻魚 何必學著飛翔何必學著飛翔何必學著飛翔
+                  你是一隻魚 何必學著飛翔何必學著飛翔何必學著飛翔
+                
+
                 </div>
               </td>
              </tr>
-                          <tr>
-               <td class="friend-block">
-                 <div class="avatar"> 
-                 <img class="img-circle" src=" https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/17626447_1452973721391230_1381565239478675306_n.jpg?oh=c15dd6e06572cf92bb757a4e15e845a6&oe=59C9BEEE">
-                 </div>
-                 <span class="firend-name">  
-                 黃國書
-                 </span>
-               </td>
-               <td class="status"> 
-               
-                <div class="status-content">  
-                  你是一顆樹 何必抓著風
-                </div>
-              </td>
-             </tr>
-                          <tr>
-               <td class="friend-block">
-                 <div class="avatar"> 
-                 <img class="img-circle" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/13139151_1119569871399751_95404025827239133_n.jpg?oh=4699130fd835edb5875d0c54ff7e730d&oe=59DD4CCC">
-                 </div>
-                 <span class="firend-name">  
-                 翁逸柏
-                 </span>
-               </td>
-               <td class="status"> 
-               
-                <div class="status-content">  
-                  .......
-                </div>
-              </td>
-             </tr>
-                          <tr>
-               <td class="friend-block">
-                 <div class="avatar"> 
-                 <img class="img-circle" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/18199268_1866004786994086_4490798884680127052_n.jpg?oh=dda32eabbfb049ed115211e503870348&oe=599BB26F">
-                 </div>
-                 <span class="firend-name">  
-                 李孟軒
-                 </span>
-               </td>
-               <td class="status"> 
-               
-                <div class="status-content">  
-                  幹你娘 李彥穆還錢  ><
-                </div>
-              </td>
-             </tr>
-                <tr>
-               <td class="friend-block">
-                 <div class="avatar"> 
-                 <img class="img-circle" src="https://scontent-tpe1-1.xx.fbcdn.net/v/t1.0-9/16298958_10154428667398510_6866731048241822105_n.jpg?oh=60147158f35095e80bbd2f19a04fbb9a&oe=59D2E0BB">
-                 </div>
-                 <span class="firend-name">  
-                 曾宇華
-                 </span>
-               </td>
-               <td class="status"> 
-               
-                <div class="status-content">  
-                  當你在黑暗 忘了怎麼走 有顆星星為你閃爍
-                </div>
-              </td>
-             </tr>
+            
+             
             </tbody>
              </table>
             </div>
 
 
         </div>
+             <button type="button" class="btn btn-primary btn-lg post-button" data-toggle="modal" data-target=".bs-example-modal-lg">狀態</button>
+        <div class="modal fade bs-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel">
+          <div class="modal-dialog modal-lg" role="document">
+            <div class="modal-content">
+              <form>
+                <div class="form-group">
+                
+                  <input placeholder="48字內" maxlength="48" rows="1" name="title" id="" class="post-title form-control">  </div>
+                  <button class="btn btn-primary">  送出</button>
+                </form>
+              </div>
+            </div>
+          </div>
         <!-- jq -->
         <script
         src="https://code.jquery.com/jquery-3.2.1.js"

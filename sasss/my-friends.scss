@@ -10,17 +10,15 @@
 	 border:#F5F5F5 1px solid;
 
 	text-align: center;
-	background-color: #03a9f4;
+	background-color: #534658;
 	font-size: 33px;
 }
 .list{
-	color:black;
-	font-size: 14px;
-	color:#607d8b;
 
 }
 tbody{
 	font-weight: bold;
+	padding: 0px !important;
 
 }
 
@@ -28,8 +26,7 @@ tbody{
 .friend-block{
 	width:30%;
 		.avatar{
-	display: inline-block;
-
+ 			margin: 0 auto;
 			width:40px;
 			height: 40px;
 			img{
@@ -37,12 +34,68 @@ tbody{
 				height:100%;
 			}
 		}
+		.friend-name{
+			text-align: center;
+		}
 
 }
 .status{
 	width:70%;
 	.status-content{
-		height: 40px;
+		    max-width: 300px;
+		    @media screen and (max-width: 600px){
+		    max-width: 280px;
+
+		    }
+			@media screen and (max-width: 500px){
+		    max-width: 250px;
+
+		    }
 		padding-top: 10px;
+		 
 	}
+}
+tr{
+	font-size: 13px;
+	color:#607d8b;
+	transition:all .6s;
+	&:hover{
+		font-size: 10px;
+
+		color:#a06e65;
+	}
+}
+
+// modal
+.post-button{
+	position: fixed;
+	bottom: 0px;
+	background-color: #A94442;
+	&:hover{
+	background-color: #A94442;
+
+	}
+	&:focus{
+	background-color: #A94442;
+
+	}
+	&:target{
+	background-color: #A94442;
+
+	}
+		right:150px;
+		border:0px;
+		@media screen and (min-width:600px){
+			left:40%;
+		}
+
+}
+.text-overflow{
+
+
+  /* Required for text-overflow to do anything */
+}
+
+a{
+	color:inherit;
 }

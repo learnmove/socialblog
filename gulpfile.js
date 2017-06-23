@@ -3,7 +3,7 @@ var plugins = require('gulp-load-plugins')();
 var browserSync = require('browser-sync');
 gulp.task('css',function(){
 	 
-return gulp.src(['./sasss/*.scss','./sasss/blog/**/*.scss'])	
+return gulp.src(['./sasss/*.scss'])	
 .pipe(plugins.sourcemaps.init())
 .pipe(plugins.sass().on('error',plugins.sass.logError))
 .pipe(plugins.autoprefixer())
